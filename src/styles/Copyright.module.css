@@ -1,0 +1,7 @@
+.copyright {
+    display: flex;
+    font-size: 12px;
+    color: white;
+    width: 138px;
+    transform: rotate(-0.25turn);
+}
