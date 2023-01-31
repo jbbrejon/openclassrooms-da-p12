@@ -14,12 +14,11 @@ function User() {
     const { id } = useParams();
     const idInt = parseInt(id);
     const [userData, setUserData] = useState({})
-    const [isDataLoading, setDataLoading] = useState(false)
+    const [isDataLoaded, setDataLoaded] = useState(false)
     const [error, setError] = useState(false)
 
     useEffect(() => {
         async function getApi() {
-            setDataLoading(true)
             try {
                 const data = await fetchData(idInt)
                 setUserData(data)
@@ -27,17 +26,24 @@ function User() {
                 setError(true)
 
             } finally {
-                setDataLoading(false)
+                setDataLoaded(true)
             }
         }
         getApi()
     }, [idInt])
     console.log(userData)
     return (
-        <main className={styles.main}>
-            <Sidebar></Sidebar>
-            <div>Bonjour {userData.userInfos.firstName}  </div>
-        </main>
+        isDataLoaded ? (
+            <main className={styles.main}>
+                <Sidebar></Sidebar>
+                <h1>Bonjour {userData.userInfos.firstName}</h1>
+            </main>
+        )
+            : (
+                <main className={styles.main}>
+                    <Sidebar></Sidebar>
+
+                </main>)
     )
 }
 
