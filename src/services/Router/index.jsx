@@ -7,6 +7,7 @@ import Error from '../../components/Error';
 
 // Import pages
 import Home from '../../pages/Home';
+import UserMock from "../../pages/UserMock";
 import User from '../../pages/User';
 
 // Set standard layout (Header/Page/Footer)
@@ -38,6 +39,10 @@ const Router = createBrowserRouter([
         children: [{
             path: "/",
             element: <Home />,
+        },
+        {
+            path: "usermock",
+            element: <UserMock />,
         },
         {
             path: "user/:id/",
