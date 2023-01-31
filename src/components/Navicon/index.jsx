@@ -2,11 +2,11 @@
 // Import styles
 import styles from '../../styles/Navicon.module.css'
 
-export default function Navicon(props) {
+export default function Navicon({ path }) {
     return (
         <>
             <div className={styles.icon}>
-                <img src={props.path} alt="activity" />
+                <img src={path} alt="activity" />
             </div>
         </>
     )
