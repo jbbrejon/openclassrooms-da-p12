@@ -9,6 +9,14 @@ import { useState, useEffect } from 'react';
 
 import fetchData from '../../api/fetchData/index.js';
 
+import Greetings from '../../components/Greetings';
+import Activity from '../../components/Activity';
+import AverageSessions from '../../components/AverageSessions';
+import Performance from '../../components/Performance';
+import Keydata from '../../components/Keydata';
+import Score from '../../components/Score';
+
+
 function User() {
 
     const { id } = useParams();
@@ -20,8 +28,8 @@ function User() {
     useEffect(() => {
         async function getApi() {
             try {
-                const data = await fetchData(idInt)
-                setUserData(data)
+                const userData = await fetchData(idInt)
+                setUserData(userData)
             } catch (err) {
                 setError(true)
 
@@ -31,12 +39,33 @@ function User() {
         }
         getApi()
     }, [idInt])
-    console.log(userData)
+
+
     return (
         isDataLoaded ? (
             <main className={styles.main}>
                 <Sidebar></Sidebar>
-                <h1>Bonjour {userData.userInfos.firstName}</h1>
+                <div className={styles.dashboard}>
+                    <Greetings firstName={userData.firstName} ></Greetings>
+                    <div className={styles.stats}>
+                        <div className={styles.charts}>
+                            <Activity activityData={userData.activityData}></Activity>
+                            <div className={styles.row}>
+                                <AverageSessions averageData={userData.averageData} ></AverageSessions>
+                                <Performance performanceData={userData.performanceData}></Performance>
+                                <Score score={userData.todayScore}></Score>
+                            </div>
+                        </div>
+                        <Keydata
+                            className={styles.keydata}
+                            calorieCount={userData.calorieCount}
+                            proteinCount={userData.proteinCount}
+                            carbohydrateCount={userData.carbohydrateCount}
+                            lipidCount={userData.lipidCount}
+                        >
+                        </Keydata>
+                    </div>
+                </div>
             </main>
         )
             : (
