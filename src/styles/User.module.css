@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.row {
+    display: flex;
+}
+
+
+.keydata {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
