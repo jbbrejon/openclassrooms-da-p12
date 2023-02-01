@@ -1,0 +1,22 @@
+.greetings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1%
+}
+
+.h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.name {
+    color: #FF0101;
+}
+
+.congrats {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
