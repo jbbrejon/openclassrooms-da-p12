@@ -1,0 +1,11 @@
+.statbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-height: 263px;
+    max-width: 258px;
+    border-radius: 5px;
+    background-color: #282D30;
+    padding: 5px;
+}

@@ -49,11 +49,19 @@ function User() {
                     <Greetings firstName={userData.firstName} ></Greetings>
                     <div className={styles.stats}>
                         <div className={styles.charts}>
-                            <Activity activityData={userData.activityData}></Activity>
+                            <div className={styles.activityData}>
+                                <Activity activityData={userData.activityData}></Activity>
+                            </div>
                             <div className={styles.row}>
-                                <AverageSessions averageData={userData.averageData} ></AverageSessions>
-                                <Performance performanceData={userData.performanceData}></Performance>
-                                <Score score={userData.todayScore}></Score>
+                                <div className={styles.box}>
+                                    <AverageSessions averageData={userData.averageData} ></AverageSessions>
+                                </div>
+                                <div className={styles.box}>
+                                    <Performance performanceData={userData.performanceData}></Performance>
+                                </div>
+                                <div className={styles.box}>
+                                    <Score scoreData={userData.todayScore}></Score>
+                                </div>
                             </div>
                         </div>
                         <Keydata
