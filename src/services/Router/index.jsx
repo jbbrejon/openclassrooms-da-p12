@@ -8,7 +8,7 @@ import Error from '../../components/Error';
 // Import pages
 import Home from '../../pages/Home';
 import UserMock from "../../pages/UserMock";
-import User from '../../pages/User';
+import Dashboard from "../../pages/Dashboard";
 
 // Set standard layout (Header/Page/Footer)
 const Layout = () => (
@@ -41,12 +41,12 @@ const Router = createBrowserRouter([
             element: <Home />,
         },
         {
-            path: "usermock",
+            path: "dashboard",
             element: <UserMock />,
         },
         {
-            path: "user/:id/",
-            element: <User />,
+            path: "dashboard/:id/",
+            element: <Dashboard />,
         },]
     }
 ]);

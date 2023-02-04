@@ -17,7 +17,7 @@ import Keydata from '../../components/Keydata';
 import Score from '../../components/Score';
 
 
-function User() {
+function Dashboard() {
 
     const { id } = useParams();
     const idInt = parseInt(id);
@@ -84,4 +84,4 @@ function User() {
     )
 }
 
-export default User
+export default Dashboard

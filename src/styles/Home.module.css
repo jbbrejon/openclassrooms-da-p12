@@ -4,3 +4,30 @@
     margin: 0;
     height: 100%;
 }
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.option {
+    display: flex;
+    padding: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #282d30;
+    border-radius: 25px;
+    color: white;
+    transition: 0.8s;
+}
+
+.user:hover {
+    background-color: #ff0101;
+    transition: 0.9s
+}
