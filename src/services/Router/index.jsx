@@ -7,8 +7,8 @@ import Error from '../../components/Error';
 
 // Import pages
 import Home from '../../pages/Home';
-import UserMock from "../../pages/UserMock";
-import Dashboard from "../../pages/Dashboard";
+import Dashboard from "../../pages/Dashboard"
+import DashboardMock from "../../pages/DashboardMock";
 
 // Set standard layout (Header/Page/Footer)
 const Layout = () => (
@@ -41,8 +41,8 @@ const Router = createBrowserRouter([
             element: <Home />,
         },
         {
-            path: "dashboard",
-            element: <UserMock />,
+            path: "dashboardmock",
+            element: <DashboardMock />,
         },
         {
             path: "dashboard/:id/",

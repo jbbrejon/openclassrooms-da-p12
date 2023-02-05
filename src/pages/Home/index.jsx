@@ -12,14 +12,16 @@ function Home() {
             <Sidebar></Sidebar>
             <div className={styles.selection}>
                 <div className={styles.option}>
-                    <h2>Mock</h2>
+                    <div className={styles.user}>
+                        <Link to="/dashboardmock">Mock</Link>
+                    </div>
                 </div>
                 <div className={styles.option}>
                     <div className={styles.user}>
-                        <Link to="/dashboard/12">API: Karl Dovineau</Link>
+                        <Link to="/dashboard/12">API: User12</Link>
                     </div>
                     <div className={styles.user}>
-                        <Link to="/dashboard/18">API : Cecilia Ratorez</Link>
+                        <Link to="/dashboard/18">API : User18</Link>
                     </div>
                 </div>
             </div>
