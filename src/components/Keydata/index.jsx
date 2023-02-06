@@ -7,7 +7,9 @@ import cheeseburger from '../../assets/keydata/cheeseburger.svg'
 
 import styles from '../../styles/Keydata.module.css'
 
-export default function Keydata({ calorieCount, proteinCount, carbohydrateCount, lipidCount }) {
+import PropTypes from 'prop-types'
+
+function Keydata({ calorieCount, proteinCount, carbohydrateCount, lipidCount }) {
     return (
         <>
             <div className={styles.keydata}>
@@ -19,3 +21,12 @@ export default function Keydata({ calorieCount, proteinCount, carbohydrateCount,
         </>
     )
 }
+
+Keydata.propTypes = {
+    calorieCount: PropTypes.number.isRequired,
+    proteinCount: PropTypes.number.isRequired,
+    carbohydrateCount: PropTypes.number.isRequired,
+    lipidCount: PropTypes.number.isRequired,
+};
+
+export default Keydata

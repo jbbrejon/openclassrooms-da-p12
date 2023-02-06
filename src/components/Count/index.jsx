@@ -1,6 +1,8 @@
 import styles from '../../styles/Count.module.css'
 
-export default function Count({ icon, name, cat, value, unit }) {
+import PropTypes from 'prop-types'
+
+function Count({ icon, name, cat, value, unit }) {
     return (
         <>
             <div className={styles.count}>
@@ -15,3 +17,13 @@ export default function Count({ icon, name, cat, value, unit }) {
         </>
     )
 }
+
+Count.propTypes = {
+    icon: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    cat: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired,
+    unit: PropTypes.string.isRequired,
+};
+
+export default Count

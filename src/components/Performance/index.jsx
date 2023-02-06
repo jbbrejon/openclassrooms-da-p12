@@ -6,7 +6,9 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Responsi
 // Import styles
 import styles from '../../styles/Performance.module.css'
 
-export default function Performance({ performanceData }) {
+import PropTypes from 'prop-types'
+
+function Performance({ performanceData }) {
     console.log(performanceData)
     return (
         <>
@@ -41,3 +43,9 @@ export default function Performance({ performanceData }) {
         </>
     )
 }
+
+Performance.propTypes = {
+    performanceData: PropTypes.array.isRequired,
+};
+
+export default Performance

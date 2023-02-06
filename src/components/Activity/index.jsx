@@ -2,7 +2,9 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 import styles from '../../styles/Activity.module.css'
 
-export default function Activity({ activityData }) {
+import PropTypes from 'prop-types'
+
+function Activity({ activityData }) {
     console.log(activityData)
     return (
         <>
@@ -32,3 +34,9 @@ export default function Activity({ activityData }) {
         </>
     )
 }
+
+Activity.propTypes = {
+    activityData: PropTypes.array.isRequired,
+};
+
+export default Activity

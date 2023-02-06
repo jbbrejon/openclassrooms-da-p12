@@ -2,7 +2,9 @@
 // Import styles
 import styles from '../../styles/Navicon.module.css'
 
-export default function Navicon({ path }) {
+import PropTypes from 'prop-types'
+
+function Navicon({ path }) {
     return (
         <>
             <div className={styles.icon}>
@@ -11,3 +13,9 @@ export default function Navicon({ path }) {
         </>
     )
 }
+
+Navicon.propTypes = {
+    path: PropTypes.string.isRequired,
+};
+
+export default Navicon

@@ -5,7 +5,9 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tool
 // Import styles
 import styles from '../../styles/AverageSessions.module.css'
 
-export default function AverageSessions({ averageData }) {
+import PropTypes from 'prop-types'
+
+function AverageSessions({ averageData }) {
     console.log(averageData)
     return (
         <>
@@ -55,3 +57,9 @@ export default function AverageSessions({ averageData }) {
         </>
     )
 }
+
+AverageSessions.propTypes = {
+    averageData: PropTypes.array.isRequired,
+};
+
+export default AverageSessions

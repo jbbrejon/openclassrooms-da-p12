@@ -2,7 +2,9 @@
 
 import styles from '../../styles/Greetings.module.css'
 
-export default function Greetings({ firstName }) {
+import PropTypes from 'prop-types'
+
+function Greetings({ firstName }) {
     return (
         <><div className={styles.greetings}>
             <h1 className={styles.h1}>Bonjour <span className={styles.name}>{firstName}</span></h1>
@@ -11,3 +13,9 @@ export default function Greetings({ firstName }) {
         </>
     )
 }
+
+Greetings.propTypes = {
+    firstName: PropTypes.string.isRequired,
+};
+
+export default Greetings

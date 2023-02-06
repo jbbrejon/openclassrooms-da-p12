@@ -1,6 +1,8 @@
 // Import styles
 import styles from '../../styles/Score.module.css'
 
+import PropTypes from 'prop-types'
+
 import {
     ResponsiveContainer,
     RadialBarChart,
@@ -8,7 +10,7 @@ import {
     PolarAngleAxis,
 } from 'recharts'
 
-export default function Score({ scoreData }) {
+function Score({ scoreData }) {
     console.log(scoreData)
     const data = [
         {
@@ -79,3 +81,9 @@ export default function Score({ scoreData }) {
         </>
     )
 }
+
+Score.propTypes = {
+    scoreData: PropTypes.number.isRequired,
+};
+
+export default Score
