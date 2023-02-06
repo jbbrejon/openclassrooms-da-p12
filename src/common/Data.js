@@ -1,3 +1,7 @@
+/**
+ * @class
+ * @classdesc Control and format data from API
+ */
 export default class Data {
     constructor(userData, activityData, averageData, performanceData) {
         this._userData = userData;

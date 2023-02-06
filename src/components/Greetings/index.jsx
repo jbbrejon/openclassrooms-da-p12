@@ -4,6 +4,11 @@ import styles from '../../styles/Greetings.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Greetings
+ * @param {string} firstName
+ * @component Greetings with first name
+ */
 function Greetings({ firstName }) {
     return (
         <><div className={styles.greetings}>

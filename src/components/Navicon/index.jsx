@@ -4,6 +4,11 @@ import styles from '../../styles/Navicon.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Navicon
+ * @param {string} path
+ * @component Left Sidebar Icon
+ */
 function Navicon({ path }) {
     return (
         <>

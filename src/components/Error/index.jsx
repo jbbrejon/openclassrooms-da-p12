@@ -1,6 +1,9 @@
 // Import CSS module
 import styles from '../../styles/Error.module.css'
-
+/**
+ * Error
+ * @component Error 404 
+ */
 function Error() {
 
     return (

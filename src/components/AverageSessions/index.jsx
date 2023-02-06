@@ -7,6 +7,12 @@ import styles from '../../styles/AverageSessions.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * AverageSessions
+ * @param {array} averageData
+ * @component Recharts (LineChart) (day and length) 
+ */
+
 function AverageSessions({ averageData }) {
     console.log(averageData)
     return (

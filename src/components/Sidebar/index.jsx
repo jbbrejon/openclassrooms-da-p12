@@ -13,6 +13,11 @@ import lifting from '../../assets/activity/lifting.svg'
 // Import styles
 import styles from '../../styles/Sidebar.module.css'
 
+
+/**
+ * Score
+ * @component List of Navicon components 
+ */
 export default function Sidebar() {
     return (
         <>

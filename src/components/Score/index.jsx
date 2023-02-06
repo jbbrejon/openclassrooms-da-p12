@@ -10,6 +10,12 @@ import {
     PolarAngleAxis,
 } from 'recharts'
 
+/**
+ * Score
+ * @param {number} scoreData
+ * @component Recharts (RadialBarChart) (scoreData * 100) 
+ */
+
 function Score({ scoreData }) {
     console.log(scoreData)
     const data = [

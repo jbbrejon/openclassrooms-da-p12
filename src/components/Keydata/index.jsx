@@ -9,6 +9,15 @@ import styles from '../../styles/Keydata.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Keydata
+ * @param {number} calorieCount
+ * @param {number} proteinCount
+ * @param {number} carbohydrateCount
+ * @param {number} lipidCount
+ * @component List of Count components
+ */
+
 function Keydata({ calorieCount, proteinCount, carbohydrateCount, lipidCount }) {
     return (
         <>

@@ -8,6 +8,11 @@ import styles from '../../styles/Performance.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Performance
+ * @param {array} performanceData
+ * @component Recharts (RadarChart) (kind and value) 
+ */
 function Performance({ performanceData }) {
     console.log(performanceData)
     return (

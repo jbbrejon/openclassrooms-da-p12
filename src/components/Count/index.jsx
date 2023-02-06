@@ -2,6 +2,16 @@ import styles from '../../styles/Count.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Count
+ * @param {string} icon
+ * @param {string} name
+ * @param {string} cat
+ * @param {number} value
+ * @param {string} unit
+ * @component Icon with information 
+ */
+
 function Count({ icon, name, cat, value, unit }) {
     return (
         <>

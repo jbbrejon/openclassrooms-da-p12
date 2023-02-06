@@ -4,6 +4,12 @@ import styles from '../../styles/Activity.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * Activity
+ * @param {array} activityData
+ * @component Recharts (BarChart) (weight and calories) 
+ */
+
 function Activity({ activityData }) {
     console.log(activityData)
     return (

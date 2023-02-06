@@ -6,6 +6,10 @@ import styles from '../..//styles/Header.module.css'
 
 import { Link } from 'react-router-dom'
 
+/**
+ * Header
+ * @component Header with logo and navlink
+ */
 function Header() {
 
     return (
