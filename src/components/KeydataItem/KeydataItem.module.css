@@ -1,0 +1,59 @@
+.count {
+    display: flex;
+    align-items: center;
+    height: 124px;
+    width: 258px;
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    padding: 32px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+}
+
+
+.caticon {
+    display: flex;
+}
+
+.calorie {
+    background-color: rgba(255, 0, 0, 0.07);
+}
+
+.protein {
+    background-color: rgba(74, 184, 255, 0.1);
+}
+
+.carbohydrate {
+    background-color: rgba(249, 206, 35, 0.1);
+}
+
+.lipid {
+    background-color: rgba(253, 81, 129, 0.1);
+}
+
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.name {
+    color: #74798C;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.data {
+    font-size: 20px;
+    font-weight: 700;
+}
