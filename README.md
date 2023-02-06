@@ -15,9 +15,8 @@ Create-React-App
 Recharts
 Prop-types
 
-## Resources provided
 
-## REQUIREMENTS
+## Requirements
 
 - NodeJS (version 16)
 - Npm
