@@ -12,6 +12,18 @@ import PropTypes from 'prop-types'
 
 function Activity({ activityData }) {
     console.log(activityData)
+
+    const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+            return (
+                <div className={styles.tooltip}>
+                    <p>{`${payload[0].value}kg`}</p>
+                    <p>{`${payload[1].value}kcal`}</p>
+                </div>
+            );
+        }
+    };
+
     return (
         <>
             <div className={styles.container}>
@@ -30,7 +42,7 @@ function Activity({ activityData }) {
                         <XAxis dataKey="dayIndex" />
                         <YAxis yAxisId="weight" type='number' orientation='right' />
                         <YAxis yAxisId="cal" type='number' orientation='left' hide />
-                        <Tooltip />
+                        <Tooltip content={<CustomTooltip />} />
                         <Legend verticalAlign='top' align='right' iconType='circle' wrapperStyle={{ marginTop: '-23px' }} formatter={(value) => <span className='text-color'>{value}</span>} />
                         <Bar yAxisId="weight" dataKey="kilogram" name='Poids (kg)' fill="#282D30" radius={[10, 10, 0, 0]} barSize={7} />
                         <Bar yAxisId="cal" dataKey="calories" name='Calories brûlées (kCal)' fill="#E60000" radius={[10, 10, 0, 0]} barSize={7} />
