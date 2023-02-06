@@ -11,11 +11,9 @@ OpenClassrooms - DA JS/REACT - P12 : Développez un tableau de bord d'analytics 
 
 ## Dependancies
 
-!Create-React-App
-
-!Recharts
-
-!Prop-types
+Create-React-App
+Recharts
+Prop-types
 
 ## Resources provided
 
