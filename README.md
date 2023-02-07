@@ -1,7 +1,7 @@
 # App information
 
-Name : Sportsee .\
-Project : OpenClassrooms - DA JS/REACT - P12 : Développez un tableau de bord d'analytics avec React.
+Name : Sportsee. \
+Project : OpenClassrooms - DA JS/REACT - P12 : Développez un tableau de bord d'analytics avec React
 
 ## Author
 
@@ -9,7 +9,7 @@ Project : OpenClassrooms - DA JS/REACT - P12 : Développez un tableau de bord d'
 
 ## Environement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 
 ## Requirements
@@ -20,10 +20,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Dependancies
 
-"jsdoc": "^4.0.0"
-"prop-types": "^15.8.1"
-"react-router-dom": "^6.8.1"
-"recharts": "^2.3.2"
+- "jsdoc": "^4.0.0"
+- "prop-types": "^15.8.1"
+- "react-router-dom": "^6.8.1"
+- "recharts": "^2.3.2"
 
 
 ## Installation
