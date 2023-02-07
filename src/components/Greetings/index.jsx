@@ -4,6 +4,12 @@ import styles from './Greetings.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * React component
+ * Display first name and congratulations message
+ * @param {string} : firstName
+ * @component
+ */
 function Greetings({ firstName }) {
     return (
         <><div className={styles.greetings}>

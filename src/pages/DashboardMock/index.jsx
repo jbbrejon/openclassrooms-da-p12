@@ -12,6 +12,11 @@ import Score from '../../components/Score';
 
 import mockData from '../../api/mockData'
 
+/**
+ * React component
+ * Display dashboard with Greetings, Activity, AverageSessions, Performance, Score, Keydata 
+ * @component
+ */
 function DashboardMock() {
     const userData = mockData()
     return (

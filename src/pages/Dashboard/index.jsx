@@ -16,7 +16,11 @@ import Performance from '../../components/Performance';
 import Keydata from '../../components/Keydata';
 import Score from '../../components/Score';
 
-
+/**
+ * React component
+ * Display dashboard with Greetings, Activity, AverageSessions, Performance, Score, Keydata 
+ * @component
+ */
 function Dashboard() {
 
     const { id } = useParams();

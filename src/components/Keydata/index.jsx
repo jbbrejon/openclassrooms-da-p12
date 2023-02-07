@@ -9,6 +9,15 @@ import styles from './Keydata.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * React component
+ * Display list of keydata elements
+ * @param {number} : calorieCount
+ * @param {number} : proteinCount
+ * @param {number} : carbohydrateCount
+ * @param {number} : lipidCount
+ * @component
+ */
 function Keydata({ calorieCount, proteinCount, carbohydrateCount, lipidCount }) {
     return (
         <>

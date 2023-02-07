@@ -7,6 +7,11 @@ import styles from './Header.module.css'
 // Import Link module
 import { Link } from 'react-router-dom'
 
+/**
+ * React component
+ * Display header with logo and nav
+ * @component
+ */
 function Header() {
     return (
         <>

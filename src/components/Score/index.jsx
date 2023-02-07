@@ -4,12 +4,15 @@ import styles from './Score.module.css'
 import PropTypes from 'prop-types'
 
 import {
-    ResponsiveContainer,
-    RadialBarChart,
-    RadialBar,
-    PolarAngleAxis,
+    ResponsiveContainer, RadialBarChart, RadialBar, PolarAngleAxis,
 } from 'recharts'
 
+/**
+ * React component with RadialBarChart (from recharts)
+ * Display score
+ * @param {number} scoreData
+ * @component
+ */
 function Score({ scoreData }) {
     console.log(scoreData)
     const data = [

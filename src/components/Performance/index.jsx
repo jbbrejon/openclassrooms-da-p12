@@ -8,14 +8,17 @@ import styles from './Performance.module.css'
 
 import PropTypes from 'prop-types'
 
-
+/**
+ * React component with RadarChart (from recharts)
+ * Display stats related to cardio, energy, endurance, strength, speed, intensity performances
+ * @param {array} performanceData
+ * @component
+ */
 function Performance({ performanceData }) {
     console.log(performanceData)
     return (
         <>
             <div className={styles.statbox}>
-
-
                 <ResponsiveContainer width="100%" height="100%">
                     <RadarChart
                         cx="50%"

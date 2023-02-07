@@ -7,6 +7,12 @@ import styles from './AverageSessions.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * React component with LineChart (from recharts)
+ * Display stats related to sessions length
+ * @param {array} averageData
+ * @component
+ */
 function AverageSessions({ averageData }) {
     console.log(averageData)
 

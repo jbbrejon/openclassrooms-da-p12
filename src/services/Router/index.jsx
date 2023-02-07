@@ -12,7 +12,7 @@ import DashboardMock from '../../pages/DashboardMock';
 import Dashboard from '../../pages/Dashboard'
 
 
-// Set standard layout (Header/Page/Footer)
+// Set standard layout
 const Layout = () => (
     <>
         <div className='container'>
@@ -25,7 +25,7 @@ const Layout = () => (
     </>
 );
 
-// Set error layout (Header/Error component/Footer)
+// Set error layout
 const ErrorLayout = () => (
     <>
         <div className='container'>

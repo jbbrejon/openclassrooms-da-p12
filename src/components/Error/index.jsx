@@ -1,6 +1,11 @@
 // Import CSS module
 import styles from './Error.module.css'
 
+/**
+ * React component
+ * Display error 404 message
+ * @component
+ */
 function Error() {
 
     return (

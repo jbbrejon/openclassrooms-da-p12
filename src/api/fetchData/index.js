@@ -1,6 +1,10 @@
 import Data from "../../classes/Data"
 
-
+/**
+ * Fetch data from API
+ * @param { Number } id
+ * @return { Object } instance of Data class
+ */
 export default async function fetchData(id) {
     const baseUrl = `http://localhost:3000/User/${id}`
     async function fetchUserData() {

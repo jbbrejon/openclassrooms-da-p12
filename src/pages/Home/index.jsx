@@ -4,6 +4,11 @@ import styles from './Home.module.css'
 // Import Link module
 import { Link } from 'react-router-dom'
 
+/**
+ * React component
+ * Display home page with links to dashboard (Mock and API)
+ * @component
+ */
 function Home() {
 
     return (

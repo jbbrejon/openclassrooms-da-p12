@@ -4,6 +4,12 @@ import styles from './Activity.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * React component with BarChart (from recharts)
+ * Display stats related to weight and burnt calories
+ * @param {array} activityData
+ * @component
+ */
 function Activity({ activityData }) {
     console.log(activityData)
 

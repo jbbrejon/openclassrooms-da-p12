@@ -2,6 +2,16 @@ import styles from './KeydataItem.module.css'
 
 import PropTypes from 'prop-types'
 
+/**
+ * React component
+ * Display keydata element
+ * @param {string} : icon
+ * @param {string} : name
+ * @param {string} : cat
+ * @param {number} : value
+ * @param {string} : unit
+ * @component
+ */
 function KeydataItem({ icon, name, cat, value, unit }) {
     return (
         <>

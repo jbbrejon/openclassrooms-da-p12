@@ -11,6 +11,12 @@ import lifting from '../../assets/activity/lifting.svg'
 // Import styles
 import styles from './Sidebar.module.css'
 
+/**
+ * React component
+ * Display sidebar with list of activity icons (meditation, swimming, cycling, lifting) and copyright
+ * @param {number} scoreData
+ * @component
+ */
 export default function Sidebar() {
     return (
         <>

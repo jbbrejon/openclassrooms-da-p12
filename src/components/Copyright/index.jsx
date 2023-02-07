@@ -2,8 +2,9 @@
 import styles from './Copyright.module.css'
 
 /**
- * Copyright
- * @component Copyright information 
+ * React component
+ * Display copyright information
+ * @component
  */
 export default function Copyright() {
     return (
