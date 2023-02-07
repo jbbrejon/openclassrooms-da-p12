@@ -55,7 +55,7 @@ export default class Data {
     formatAverageData() {
         const days = ['L', 'M', 'M', 'J', 'V', 'S', 'S'];
         let formatedAverageData = []
-        this._averageData.sessions.foreach((element, index) => {
+        this._averageData.sessions.forEach((element, index) => {
             Object.assign(element, { dayCap: days[index] })
             formatedAverageData.push(element)
         });
