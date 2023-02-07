@@ -15,7 +15,6 @@ import PropTypes from 'prop-types'
  * @component
  */
 function Performance({ performanceData }) {
-    console.log(performanceData)
     return (
         <>
             <div className={styles.statbox}>

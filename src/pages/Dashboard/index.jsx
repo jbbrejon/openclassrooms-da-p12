@@ -55,8 +55,6 @@ function Dashboard() {
     if (userData.id !== undefined && activityData.userId !== undefined && averageData.userId !== undefined && performance.userId !== undefined) {
         errorStatus = false
         myData = new Data(userData, activityData, averageData, performance)
-
-        console.log(myData)
     } else {
         errorStatus = true
     }

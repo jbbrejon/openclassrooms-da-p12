@@ -14,8 +14,6 @@ import PropTypes from 'prop-types'
  * @component
  */
 function AverageSessions({ averageData }) {
-    console.log(averageData)
-
     //Custom tooltip
     const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {

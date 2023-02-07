@@ -11,8 +11,6 @@ import PropTypes from 'prop-types'
  * @component
  */
 function Activity({ activityData }) {
-    console.log(activityData)
-
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
             return (

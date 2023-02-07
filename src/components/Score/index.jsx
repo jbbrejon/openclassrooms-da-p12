@@ -14,7 +14,6 @@ import {
  * @component
  */
 function Score({ scoreData }) {
-    console.log(scoreData)
     const data = [
         {
             uv: scoreData * 100,
