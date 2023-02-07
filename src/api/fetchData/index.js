@@ -1,62 +1,46 @@
-import Data from "../../classes/Data"
-
 /**
  * Fetch data from API
  * @param { Number } id
- * @return { Object } instance of Data class
  */
-export default async function fetchData(id) {
-    const baseUrl = `http://localhost:3000/User/${id}`
-    async function fetchUserData() {
-        try {
-            const response = await fetch(`${baseUrl}`)
-            const { data } = await response.json()
-            return data
-        } catch (err) {
-            return `Error: ${err}`
-        }
+
+const baseUrl = `http://localhost:3000/User/`
+
+export async function fetchUserData(id) {
+    try {
+        const response = await fetch(`${baseUrl}${id}`)
+        const { data } = await response.json()
+        return data
+    } catch (err) {
+        return err
     }
+}
 
-    async function fetchActivityData() {
-        try {
-            const response = await fetch(`${baseUrl}/activity`)
-            const { data } = await response.json()
-            return data
-        } catch (err) {
-            return `Error: ${err}`
-        }
+export async function fetchActivityData(id) {
+    try {
+        const response = await fetch(`${baseUrl}${id}/activity`)
+        const { data } = await response.json()
+        return data
+    } catch (err) {
+        return err
     }
+}
 
-    async function fetchAverageData() {
-        try {
-            const response = await fetch(`${baseUrl}/average-sessions`)
-            const { data } = await response.json()
-            return data
-        } catch (err) {
-            return `Error: ${err}`
-        }
+export async function fetchAverageData(id) {
+    try {
+        const response = await fetch(`${baseUrl}${id}/average-sessions`)
+        const { data } = await response.json()
+        return data
+    } catch (err) {
+        return err
     }
+}
 
-    async function fetchPerformanceData() {
-        try {
-            const response = await fetch(`${baseUrl}/performance`)
-            const { data } = await response.json()
-            return data
-        } catch (err) {
-            return `Error: ${err}`
-        }
+export async function fetchPerformanceData(id) {
+    try {
+        const response = await fetch(`${baseUrl}${id}/performance`)
+        const { data } = await response.json()
+        return data
+    } catch (err) {
+        return err
     }
-
-
-
-
-    let userData = await fetchUserData()
-    let activityData = await fetchActivityData()
-    let averageData = await fetchAverageData()
-    let performance = await fetchPerformanceData()
-
-    let myData = new Data(userData, activityData, averageData, performance)
-    console.log(myData)
-
-    return myData
 }
