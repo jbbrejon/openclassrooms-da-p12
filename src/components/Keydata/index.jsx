@@ -5,7 +5,7 @@ import chicken from '../../assets/keydata/chicken.svg'
 import apple from '../../assets/keydata/apple.svg'
 import cheeseburger from '../../assets/keydata/cheeseburger.svg'
 
-import styles from '../../styles/Keydata.module.css'
+import styles from './Keydata.module.css'
 
 import PropTypes from 'prop-types'
 
