@@ -1,0 +1,27 @@
+.statbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-height: 263px;
+    max-width: 258px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.title {
+    font-size: 12px;
+    color: #20253A;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 8px;
+    background-color: white;
+    color: black;
+    height: 25px;
+    width: 39px;
+}
