@@ -1,6 +1,6 @@
 
 // Import CSS module
-import styles from './Dashboard.module.css'
+import styles from '../Dashboard/Dashboard.module.css'
 
 
 import Greetings from '../../components/Greetings';
