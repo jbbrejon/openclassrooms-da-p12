@@ -1,6 +1,6 @@
 // Import styles
 
-import styles from './styles/Greetings.module.css'
+import styles from './Greetings.module.css'
 
 import PropTypes from 'prop-types'
 
