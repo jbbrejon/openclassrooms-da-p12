@@ -1,4 +1,4 @@
-import styles from './styles/KeydataItem.module.css'
+import styles from './KeydataItem.module.css'
 
 import PropTypes from 'prop-types'
 
