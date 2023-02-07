@@ -16,7 +16,13 @@ export default class Data {
         return this._userData.userInfos.firstName
     }
     get todayScore() {
-        return this._userData.todayScore
+        if (this._userData.todayScore === undefined) {
+            return this._userData.score
+        }
+        else {
+            return this._userData.todayScore
+        }
+
     }
     get calorieCount() {
         return this._userData.keyData.calorieCount
