@@ -60,8 +60,7 @@ function Dashboard() {
 
     return (
         isDataLoading ? (
-            <div className={styles.dashboard}>
-                <div>Loading</div>
+            <div className={styles.loading}>
             </div>
 
         )
@@ -69,9 +68,7 @@ function Dashboard() {
             (
                 errorStatus ? (
 
-                    <div className={styles.dashboard}>
-                        <div>Impossible de récupérer les données depuis l'API</div>
-                    </div>
+                    <div className={styles.error}>Impossible de récupérer les données depuis l'API</div>
                 )
                     : (
                         <div className={styles.dashboard}>
