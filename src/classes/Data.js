@@ -1,6 +1,7 @@
 /**
+ * Class to create object with userData, activityData, averageData, performanceData as constructor (from API)
  * @class
- * @classdesc Control and format data from API
+ * @classdesc Return and format data with getters and methods
  */
 
 export default class Data {

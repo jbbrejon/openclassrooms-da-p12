@@ -1,16 +1,14 @@
-
-// Import CSS module
-import styles from '../Dashboard/Dashboard.module.css'
-
-
+// Import components
 import Greetings from '../../components/Greetings';
 import Keydata from '../../components/Keydata';
 import Activity from '../../components/Activity';
 import AverageSessions from '../../components/AverageSessions';
 import Performance from '../../components/Performance';
 import Score from '../../components/Score';
-
 import mockData from '../../api/mockData'
+
+// Import CSS module
+import styles from '../Dashboard/Dashboard.module.css'
 
 /**
  * React component
@@ -20,8 +18,6 @@ import mockData from '../../api/mockData'
 function DashboardMock() {
     const userData = mockData()
     return (
-
-
         <div className={styles.dashboard}>
             <Greetings firstName={userData.firstName} ></Greetings>
             <div className={styles.stats}>

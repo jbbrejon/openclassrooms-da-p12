@@ -1,8 +1,9 @@
+// Import modules
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-import styles from './Activity.module.css'
-
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './Activity.module.css'
 
 /**
  * React component with BarChart (from recharts)
@@ -50,7 +51,7 @@ function Activity({ activityData }) {
         </>
     )
 }
-
+// PropTypes definition
 Activity.propTypes = {
     activityData: PropTypes.array.isRequired,
 };

@@ -1,4 +1,4 @@
-// Import styles
+// Import CSS module
 import styles from './Copyright.module.css'
 
 /**

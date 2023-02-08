@@ -1,8 +1,8 @@
-// Import styles
-import styles from './Navicon.module.css'
-
-// Import Proptypes
+// Import modules
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './Navicon.module.css'
 
 /**
  * React component
@@ -20,7 +20,7 @@ function Navicon({ path }) {
     )
 }
 
-// PropTypes configuration
+// PropTypes definition
 Navicon.propTypes = {
     path: PropTypes.string.isRequired,
 };

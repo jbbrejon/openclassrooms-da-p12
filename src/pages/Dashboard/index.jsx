@@ -1,15 +1,12 @@
-// Import CSS module
-import styles from './Dashboard.module.css'
-
+// Import modules 
 import { useParams } from 'react-router-dom'
-
 import { useState, useEffect } from 'react';
 
-//import fetchData from '../../api/fetchData/index.js';
+// Import class and functions
 import { fetchActivityData, fetchAverageData, fetchPerformanceData, fetchUserData } from '../../api/fetchData/index'
 import Data from '../../classes/Data';
 
-
+// Import components
 import Greetings from '../../components/Greetings';
 import Activity from '../../components/Activity';
 import AverageSessions from '../../components/AverageSessions';
@@ -17,13 +14,15 @@ import Performance from '../../components/Performance';
 import Keydata from '../../components/Keydata';
 import Score from '../../components/Score';
 
+// Import CSS module
+import styles from './Dashboard.module.css'
+
 /**
  * React component
  * Display dashboard with Greetings, Activity, AverageSessions, Performance, Score, Keydata 
  * @component
  */
 function Dashboard() {
-
     const { id } = useParams();
     const [userData, setUserData] = useState({})
     const [activityData, setActivityData] = useState({})
@@ -60,14 +59,12 @@ function Dashboard() {
     }
 
     return (
-
         isDataLoading ? (
             <div className={styles.dashboard}>
                 <div>Loading</div>
             </div>
 
         )
-
             :
             (
                 errorStatus ? (
@@ -108,13 +105,7 @@ function Dashboard() {
                         </div>
                     )
             )
-
     )
-
-
-
-
-
 }
 
 export default Dashboard

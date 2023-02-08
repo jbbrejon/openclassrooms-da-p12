@@ -1,10 +1,11 @@
-/**
- * Fetch data from API
- * @param { Number } id
- */
-
+// Base URL of API
 const baseUrl = `http://localhost:3000/User/`
 
+/**
+ * Fetch data from API http://localhost:3000/User/{id}
+ * @param { Number } id
+ * @returns {object} UserData
+ */
 export async function fetchUserData(id) {
     try {
         const response = await fetch(`${baseUrl}${id}`)
@@ -15,6 +16,11 @@ export async function fetchUserData(id) {
     }
 }
 
+/**
+ * Fetch data from API http://localhost:3000/User/{id}/activity
+ * @param { Number } id
+ * @returns {object} ActivityData
+ */
 export async function fetchActivityData(id) {
     try {
         const response = await fetch(`${baseUrl}${id}/activity`)
@@ -25,6 +31,11 @@ export async function fetchActivityData(id) {
     }
 }
 
+/**
+ * Fetch data from API http://localhost:3000/User/{id}/average-sessions
+ * @param { Number } id
+ * @returns {object} AverageData
+ */
 export async function fetchAverageData(id) {
     try {
         const response = await fetch(`${baseUrl}${id}/average-sessions`)
@@ -35,6 +46,11 @@ export async function fetchAverageData(id) {
     }
 }
 
+/**
+ * Fetch data from API http://localhost:3000/User/{id}/performance
+ * @param { Number } id
+ * @returns {object} PerformanceData
+ */
 export async function fetchPerformanceData(id) {
     try {
         const response = await fetch(`${baseUrl}${id}/performance`)

@@ -1,8 +1,8 @@
-// Import styles
-
-import styles from './Greetings.module.css'
-
+// Import modules
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './Greetings.module.css'
 
 /**
  * React component
@@ -19,7 +19,7 @@ function Greetings({ firstName }) {
         </>
     )
 }
-
+// PropTypes definition
 Greetings.propTypes = {
     firstName: PropTypes.string.isRequired,
 };

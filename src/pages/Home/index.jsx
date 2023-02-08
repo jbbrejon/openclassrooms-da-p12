@@ -1,8 +1,8 @@
+// Import modules
+import { Link } from 'react-router-dom'
+
 // Import CSS module
 import styles from './Home.module.css'
-
-// Import Link module
-import { Link } from 'react-router-dom'
 
 /**
  * React component

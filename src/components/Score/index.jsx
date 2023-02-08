@@ -1,11 +1,10 @@
 // Import styles
-import styles from './Score.module.css'
-
+// Import modules
+import { ResponsiveContainer, RadialBarChart, RadialBar, PolarAngleAxis, } from 'recharts'
 import PropTypes from 'prop-types'
 
-import {
-    ResponsiveContainer, RadialBarChart, RadialBar, PolarAngleAxis,
-} from 'recharts'
+// Import CSS module
+import styles from './Score.module.css'
 
 /**
  * React component with RadialBarChart (from recharts)
@@ -84,6 +83,7 @@ function Score({ scoreData }) {
     )
 }
 
+// PropTypes definition
 Score.propTypes = {
     scoreData: PropTypes.number.isRequired,
 };

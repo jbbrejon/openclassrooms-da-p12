@@ -1,13 +1,17 @@
+// Import modules
+import PropTypes from 'prop-types'
+
+// Import components
 import KeydataItem from "../KeydataItem"
 
+// Import assets
 import energy from '../../assets/keydata/energy.svg'
 import chicken from '../../assets/keydata/chicken.svg'
 import apple from '../../assets/keydata/apple.svg'
 import cheeseburger from '../../assets/keydata/cheeseburger.svg'
 
+// Import CSS module
 import styles from './Keydata.module.css'
-
-import PropTypes from 'prop-types'
 
 /**
  * React component
@@ -31,6 +35,7 @@ function Keydata({ calorieCount, proteinCount, carbohydrateCount, lipidCount }) 
     )
 }
 
+// PropTypes definition
 Keydata.propTypes = {
     calorieCount: PropTypes.number.isRequired,
     proteinCount: PropTypes.number.isRequired,

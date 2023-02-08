@@ -1,11 +1,9 @@
-// Recharts 
+// Import modules 
 import { LineChart, Line, XAxis, ResponsiveContainer, Tooltip, Rectangle } from 'recharts';
-
-
-// Import styles
-import styles from './AverageSessions.module.css'
-
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './AverageSessions.module.css'
 
 /**
  * React component with LineChart (from recharts)
@@ -14,7 +12,7 @@ import PropTypes from 'prop-types'
  * @component
  */
 function AverageSessions({ averageData }) {
-    //Custom tooltip
+    // Tooltip
     const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {
             return (
@@ -27,7 +25,7 @@ function AverageSessions({ averageData }) {
         return null;
     };
 
-    //Custom cursor
+    // Tooltip cursor
     function Cursor({ points }) {
         return (
             <Rectangle
@@ -89,6 +87,7 @@ function AverageSessions({ averageData }) {
     )
 }
 
+// PropTypes definition
 AverageSessions.propTypes = {
     averageData: PropTypes.array.isRequired,
 };

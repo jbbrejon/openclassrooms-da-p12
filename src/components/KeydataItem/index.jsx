@@ -1,6 +1,8 @@
-import styles from './KeydataItem.module.css'
-
+// Import modules
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './KeydataItem.module.css'
 
 /**
  * React component
@@ -28,6 +30,7 @@ function KeydataItem({ icon, name, cat, value, unit }) {
     )
 }
 
+// PropTypes definition
 KeydataItem.propTypes = {
     icon: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

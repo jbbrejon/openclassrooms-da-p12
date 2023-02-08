@@ -1,11 +1,12 @@
+// Import modules
+import { Link } from 'react-router-dom'
+
 // Import Logo
 import logo from '../../assets/logo/logo.svg'
 
 // Import CSS module
 import styles from './Header.module.css'
 
-// Import Link module
-import { Link } from 'react-router-dom'
 
 /**
  * React component

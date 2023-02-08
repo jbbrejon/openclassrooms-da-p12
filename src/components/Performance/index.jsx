@@ -1,12 +1,9 @@
-// Recharts 
+// Import modules 
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
-
-
-
-// Import styles
-import styles from './Performance.module.css'
-
 import PropTypes from 'prop-types'
+
+// Import CSS module
+import styles from './Performance.module.css'
 
 /**
  * React component with RadarChart (from recharts)
@@ -47,6 +44,7 @@ function Performance({ performanceData }) {
     )
 }
 
+// PropTypes definition
 Performance.propTypes = {
     performanceData: PropTypes.array.isRequired,
 };
