@@ -12,6 +12,7 @@ import styles from './Activity.module.css'
  * @component
  */
 function Activity({ activityData }) {
+    // Tooltip
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
             return (
@@ -30,21 +31,16 @@ function Activity({ activityData }) {
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         data={activityData}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                        <XAxis dataKey="dayIndex" />
-                        <YAxis yAxisId="weight" type='number' orientation='right' />
-                        <YAxis yAxisId="cal" type='number' orientation='left' hide />
+                        barGap={8}>
+                        <CartesianGrid strokeDasharray='3 3' vertical={false} />
+                        <XAxis dataKey='dayIndex' tickLine={false} axisLine={false} />
+                        <XAxis dataKey='calories' type='number' tickLine={false} axisLine={false} />
+                        <YAxis dataKey='kilogram' type='number' tickLine={false} orientation='right' axisLine={false} domain={['dataMin - 1', 'dataMax + 1']} />
+                        <YAxis dataKey='calories' type='number' yAxisId='calories' hide />
                         <Tooltip content={<CustomTooltip />} />
-                        <Legend verticalAlign='top' align='right' iconType='circle' wrapperStyle={{ marginTop: '-23px' }} formatter={(value) => <span className='text-color'>{value}</span>} />
-                        <Bar yAxisId="weight" dataKey="kilogram" name='Poids (kg)' fill="#282D30" radius={[10, 10, 0, 0]} barSize={7} />
-                        <Bar yAxisId="cal" dataKey="calories" name='Calories brûlées (kCal)' fill="#E60000" radius={[10, 10, 0, 0]} barSize={7} />
+                        <Legend verticalAlign='top' align='right' iconType='circle' wrapperStyle={{ marginTop: '-23px' }} />
+                        <Bar name='Poids (kg)' dataKey='kilogram' radius={[10, 10, 0, 0]} barSize={7} fill='#282D30' />
+                        <Bar name='Calories brûlées (kCal)' dataKey='calories' radius={[10, 10, 0, 0]} barSize={7} yAxisId='calories' fill='#E60000' />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
