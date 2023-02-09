@@ -38,7 +38,7 @@ function Activity({ activityData }) {
                         <YAxis dataKey='kilogram' type='number' tickLine={false} orientation='right' axisLine={false} domain={['dataMin - 1', 'dataMax + 1']} />
                         <YAxis dataKey='calories' type='number' yAxisId='calories' hide />
                         <Tooltip content={<CustomTooltip />} />
-                        <Legend verticalAlign='top' align='right' iconType='circle' wrapperStyle={{ marginTop: '-23px' }} />
+                        <Legend verticalAlign='top' align='right' iconType='circle' wrapperStyle={{ marginTop: '-23px' }} formatter={(value) => <span className={styles.legend}>{value}</span>} />
                         <Bar name='Poids (kg)' dataKey='kilogram' radius={[10, 10, 0, 0]} barSize={7} fill='#282D30' />
                         <Bar name='Calories brûlées (kCal)' dataKey='calories' radius={[10, 10, 0, 0]} barSize={7} yAxisId='calories' fill='#E60000' />
                     </BarChart>
