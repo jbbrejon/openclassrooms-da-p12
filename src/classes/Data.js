@@ -13,9 +13,11 @@ export default class Data {
     }
 
     // Getters
+    // Return firstName 
     get firstName() {
         return this._userData.userInfos.firstName
     }
+    // Return todayScore 
     get todayScore() {
         if (this._userData.todayScore === undefined) {
             return this._userData.score
@@ -25,28 +27,37 @@ export default class Data {
         }
 
     }
+    // Return calorieCount 
     get calorieCount() {
         return this._userData.keyData.calorieCount
     }
+    // Return proteinCount
     get proteinCount() {
         return this._userData.keyData.proteinCount
     }
+    // Return carbohydrateCount
     get carbohydrateCount() {
         return this._userData.keyData.carbohydrateCount
     }
+    // Return lipidCount
     get lipidCount() {
         return this._userData.keyData.lipidCount
     }
+    // Return activityData (formated)
     get activityData() {
         return this.formatActivityData()
     }
+    // Return averageData (formated)
     get averageData() {
         return this.formatAverageData()
     }
+    // Return performanceData (formated)
     get performanceData() {
         return this.formatPerformanceData()
     }
+
     // Methods
+    // Return array of formated activityData with day index
     formatActivityData() {
         let formatedActivityData = []
         this._activityData.sessions.forEach((element, index) => {
@@ -55,6 +66,7 @@ export default class Data {
         });
         return formatedActivityData
     }
+    // Return array of formated performanceData with capitalized kind name
     formatPerformanceData() {
         let formatedPerformanceData = []
         this._performanceData.data.forEach((element, index) => {
@@ -64,6 +76,7 @@ export default class Data {
         });
         return formatedPerformanceData.reverse()
     }
+    // Return array of formated averageData with first letter of week days
     formatAverageData() {
         const days = ['L', 'M', 'M', 'J', 'V', 'S', 'S'];
         let formatedAverageData = []
@@ -73,6 +86,7 @@ export default class Data {
         });
         return formatedAverageData
     }
+    // Return capitalized word
     capitalizeWord(word) {
         const firstLetter = word.charAt(0)
         const firstLetterCap = firstLetter.toUpperCase()
