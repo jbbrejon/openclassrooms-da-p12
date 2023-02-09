@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - NodeJS (version 16)
 - Npm
 - Backend (follow instructions to install and launch the project ): https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
-- Editor : Visual Studio code recommanded
+- Editor : Visual Studio code recommended
 
 ## Dependancies
 
